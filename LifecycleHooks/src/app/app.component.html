@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<label>Student Name:</label>
+<input type="text" [(ngModel)]="studentName">
+<br>
+<br>
+<label>Student Last Name:</label>
+
+
+<input type="text" [(ngModel)]="studentLastName">
+
+
+<!-- <students [name]="studentName" [lastName]="studentLastName"></students> -->
+
+<students *ngIf="studentName" [name]="studentName" [lastName]="studentLastName"></students>
